@@ -1,0 +1,54 @@
+@use '../abstracts' as *;
+
+.about__page{
+    width: 70%;
+    margin: auto;
+    .img__con{
+        height: 380px;
+      
+            background-image: url('../../assets/images/landscape.JPG');
+            background-repeat: no-repeat;
+            background-size: cover;
+      background-position-y: 20%;
+    //   background-blend-mode: overlay;
+      filter: opacity(0.55);
+    }
+    .name, .desc{
+        border-bottom: 1px solid #adadad35;
+        p{
+            color: rgba(210, 210, 210, 0.779);
+            font-size: 15px;
+        }
+    }
+    .name{
+        p{
+            color: rgb(192, 192, 192);
+        }
+    }
+    .info{
+        border-bottom: 1px solid #adadad35;
+        td{
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 29px;
+        }
+        .ans{
+            font-weight: 400;
+        color: rgba(210, 210, 210, 0.779);
+
+        }
+    }
+    .skill__about{
+        h2{
+            font-size: 26px;
+        }
+        p{
+            font-size: 15px;
+        }
+        li{
+            font-size: 15px;
+            color: rgba(210, 210, 210, 0.779);
+            
+        }
+    }
+}

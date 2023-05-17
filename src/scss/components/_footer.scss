@@ -1,0 +1,13 @@
+@use '../abstracts' as *;
+
+.footer__sec{
+    border-top: 1px solid #adadad6b;
+    p{
+        margin: 0;
+    }
+    .logo__con{
+        img{
+            width: 24px;
+        }
+    }
+}

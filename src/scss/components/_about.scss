@@ -1,0 +1,28 @@
+@use '../abstracts' as *;
+
+.about__sec{
+    // background-color: red;
+    height: 80vh;
+    position: relative;
+    p{
+        font-size: 26px;
+        z-index: 10;
+        background-color: transparent;
+        span{
+            background-color: transparent;
+            font-weight: 900;
+        }
+    }
+    h1{
+        position: absolute;
+        font-size: 203px;
+        top: 29%;
+        left: 30%;
+        transform: translate(-50%,-50%);
+        letter-spacing: 14px;
+        text-shadow: -0.5px 0 rgba(255, 255, 255, 0), 0 0.5px rgba(209, 209, 209, 0.248), 0.5px 0 rgba(209, 209, 209, 0.248), 0 -0.5px rgba(209, 209, 209, 0.413);
+        color: $black;
+        background-color: transparent;
+        opacity: 0.8;
+    }
+}

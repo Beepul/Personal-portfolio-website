@@ -1,0 +1,115 @@
+@use '../abstracts' as *;
+
+
+.fixed-top{
+    animation: nav 1s;
+    background: linear-gradient(180deg, rgba(36, 37, 43, 0.5), rgba(17, 17, 20, 0.5));
+    // height: 70px;
+    .app__con{
+        background: transparent;
+        
+    }
+    .header__sec{
+        padding-top: 18px;
+        padding-bottom: 18px;
+        background: transparent;
+        div, ul, a ,h6 ,img{
+        background: transparent;
+       }
+    }
+  }
+  @keyframes nav {
+    0% {
+        transform: translateY(-100%);
+    } 
+    100%{
+        transform: translateY(0%)
+    }
+  }
+.header__sec{
+    // background-color: red
+    padding-top: 30px;
+    padding-bottom: 30px;
+   .logo__con{
+    width: 26px;
+   }
+   ul{
+    li{
+        text-transform: uppercase;
+        font-weight: 600;
+        cursor: pointer;
+        position: relative;
+        a{
+            transition: 0.4s all linear;
+
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: -5%;
+            width: 0%;
+            height: 2px;
+            border-radius: 6px;
+            background-color: $gray;
+            transition: 0.4s all linear;
+        }
+        &:hover{
+            &::after{
+                width: 110%;
+            }
+            a{
+                letter-spacing: 2px;
+            }
+            color: $gray;
+        }
+    }
+   }
+   
+}
+.offcanvas{
+  width: 75% !important;
+  background: rgba(27, 25, 25, 0.5);
+  -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(24px);
+    padding: 1rem 7rem 2rem 7rem !important;
+  .offcanvas-header, .offcanvas-body, .h5{
+    background-color: transparent ;
+  }
+  .offcanvas-title{
+    a, h6, h5, img{
+        background-color: transparent !important;
+        font-size: 20px;
+    }
+    .logo__con{
+      width: 30px;
+    }
+  }
+  .nav__con ,ul, li, a{
+    background-color: transparent !important;
+    font-size: 20px;
+  }
+  .offcanvas__footer{
+    background-color: transparent;
+    i{
+        font-size: 16px !important; 
+    }
+    p{
+        background-color: transparent;
+        padding: 0 !important;
+        margin: 0;
+        font-size: 16px;
+    }
+  }
+}
+.bars{
+    height: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    .line{
+        height: 3px;
+        width: 26px;
+        background: $white;
+        border-radius: 36px;
+    }
+   }

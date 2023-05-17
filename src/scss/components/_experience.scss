@@ -1,0 +1,78 @@
+@use '../abstracts' as *;
+
+.experience__sec {
+    position: relative;
+    height: 80vh;
+    h1{
+        position: absolute;
+        top: 47%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 143px;
+        color: $black;
+        z-index: 10;
+        opacity: 0.8;
+            text-shadow: -0.5px 0 rgba(255, 255, 255, 0), 0 0.5px rgba(209, 209, 209, 0.248), 0.5px 0 rgba(209, 209, 209, 0.248), 0 -0.5px rgba(209, 209, 209, 0.413);
+    }
+	.heading {
+		font-size: 46px;
+	}
+	.history__con {
+		h3 {
+            z-index: 20;
+			font-size: 36px;
+			color: $white;
+			-webkit-text-fill-color: $black; /* Will override color (regardless of order) */
+			-webkit-text-stroke-width: 0.2px;
+			-webkit-text-stroke-color: $white;
+			opacity: 0.5;
+			position: relative;
+			&::before {
+				content: "";
+				position: absolute;
+				top: -6%;
+				left: -30%;
+				height: 70px;
+				width: 70px;
+				border: 1.5px solid #adadad4f;
+				border-bottom-color: transparent;
+				border-radius: 50%;
+			}
+            &::after{
+                content: '';
+                position: absolute;
+                top: 30%;
+                left: 50%;
+                width: 1px;
+                height: 150px;
+                background: #adadad4f;
+            }
+		}
+	}
+	.info__con {
+        z-index: 20;
+        background-color: transparent;
+        h4{
+            font-size: 26px;
+        background-color: transparent;
+
+        }
+        p{
+        background-color: transparent;
+
+            font-style: italic;
+            color: $gray;
+        }
+        li{
+            
+            padding-bottom: 14px;
+            width: 400px;
+            background-color: transparent;
+
+        }
+        ul{
+            background-color: transparent;
+            padding-left: 36px;
+        }
+	}
+}

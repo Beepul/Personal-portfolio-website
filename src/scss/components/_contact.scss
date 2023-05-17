@@ -1,0 +1,163 @@
+@use '../abstracts' as *;
+
+.contact__sec{
+    .upper__text{
+        h2{
+            font-size: 36px;
+        }
+        .msg{
+            font-size: 28px;
+            color: #d9d9d9;
+            a{
+                color: $white ;
+                font-weight: 700;
+                position: relative;
+                cursor: pointer;
+                transition: 0.6s all linear;
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 0%;
+                    width: 25%;
+                    height: 4px;
+                    background: $white;
+                    transition: 0.6s all linear;
+                    border-radius: 36px;
+                }
+                &:hover{
+                    letter-spacing: 3px;
+                 &::after{
+                    width: 65%;
+                 }   
+                }
+            }
+        }
+    }
+    .lower__text{
+        h2{
+            font-size: 36px;
+        }
+        p{
+            font-size: 17px;
+            color: $gray;
+        }
+        li{
+            a{
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                color: $gray;
+                font-size: 13px;
+                transition: 0.6s all linear;
+                text-transform: uppercase;
+            }
+            i{
+                font-size: 25px;
+                padding-right: 8px;
+                color: $gray;
+                transition: 0.6s all linear;
+
+            }
+            &:hover{
+                a{
+                    letter-spacing: 3px;
+                    color: $white;
+                }
+                i{
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+.form__sec{
+    // background-color: red;
+    textarea, input{
+        background-color: #f6f6f6;
+        &:focus{
+            box-shadow: none;
+            border-color: $white;
+        }
+    }
+    .form-floating>label {
+        background-color: transparent;
+        color: rgba(0, 0, 0, 0.872);
+        font-size: $font;
+        font-weight: 700;
+    }
+    .btn__con{
+        button {
+            font-family: inherit;
+            display: inline-block;
+            width: 7em;
+            height: 2.6em;
+            line-height: 2.5em;
+            overflow: hidden;
+            // margin: 20px;
+            font-size: 16px;
+            z-index: 1;
+            color: $white;
+            border: 1px solid $gray;
+            border-radius: 6px;
+            position: relative;
+          }
+          
+          button::before {
+            position: absolute;
+            content: "";
+            background: $gray;
+            width: 170px;
+            height: 200px;
+            z-index: -1;
+            border-radius: 50%;
+          }
+          
+          button:hover {
+            color: white;
+          }
+          
+          button:before {
+            top: 100%;
+            left: 100%;
+            transition: .3s all;
+          }
+          
+          button:hover::before {
+            top: -30px;
+            left: -30px;
+          }
+    }
+      
+}
+
+.modal-header{
+    border-bottom: none;
+    // background: linear-gradient(180deg, rgba(36, 37, 43, 0.534), rgba(19, 19, 21, 0.871));
+    border-radius: 4px;
+    height: 100%;
+    h4{
+        color: $gray;
+    }
+}
+.modal-content{
+    height: 100px ;
+}
+.modal-dialog{
+    background-color: transparent;
+}
+@media (min-width: 992px){
+    .modal-lg, .modal-xl {
+     --bs-modal-width: 500px;
+    }
+}
+@media (min-width: 576px){
+    .modal {
+        --bs-modal-margin: 1.75rem;
+        --bs-modal-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        background-color: rgba(0, 0, 0, 0.611);
+    }
+
+}

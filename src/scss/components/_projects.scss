@@ -1,0 +1,42 @@
+@use '../abstracts' as *;
+
+.project__sec {
+	.heading {
+		h2 {
+			font-size: 46px;
+		}
+		p {
+			color: $gray;
+			font-size: 18px;
+		}
+	}
+	
+	.swiper, .swiper-wrapper, .swiper-slide, .swiper-button-prev, .swiper-button-next{
+		background-color: transparent !important;
+	}
+	.swiper-button-prev{
+		color: $gray;
+		top: 5%;
+		left: 89%;
+		border-radius: 50%;
+		border:1px solid #adadad57;
+		height: 50px;
+		width: 50px;
+		&::after{
+			font-size: 16px;
+		}
+	}
+	.swiper-button-next{
+		color: $gray;
+		top: 5%;
+		right:0% ;
+		border-radius: 50%;
+		border:1px solid #adadad57;
+		height: 50px;
+		width: 50px;
+		&::after{
+			font-size: 16px;
+		}
+	}
+}
+

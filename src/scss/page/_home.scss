@@ -1,0 +1,30 @@
+@use '../abstracts' as *;
+.app{
+    // background-color: gray;
+    overflow: hidden;
+}
+.body__con{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    h1{
+        position: absolute;
+        color: $dimgray;
+        letter-spacing: 14px;
+        background-color: transparent;
+        font-size: 203px;
+        
+    }
+    .intros{
+        transform: rotate(90deg);
+        top: 19.5%;
+        left: 62.5%;
+    }
+    .works{
+        transform: rotate(90deg);
+        top: 54%;
+        right: 60.5%;
+        
+    }
+}

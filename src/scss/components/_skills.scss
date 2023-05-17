@@ -1,0 +1,26 @@
+@use '../abstracts' as *;
+
+.skills__sec{
+    height: 60vh;
+    // background: red;
+    h2{
+        font-size: 36px;
+    }
+    p{
+        color: $gray;
+        font-size: 18px;
+    }
+    ul{
+        li{
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            span{
+                font-size: 26px;
+                margin-right: 14px;
+                color: $black;
+                text-shadow: -0.5px 0 rgba(255, 255, 255, 0), 0 0.5px rgba(209, 209, 209, 0.248), 0.5px 0 rgba(209, 209, 209, 0.248), 0 -0.5px rgba(209, 209, 209, 0.413);
+            }
+        }
+    }
+}

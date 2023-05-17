@@ -1,0 +1,10 @@
+@use './var' as *;
+
+// @mixin bg-heading () {
+//     color: #a0a0a049;
+// }
+
+@mixin border-heading () {
+    color: transparent;
+}
+
