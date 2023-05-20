@@ -12,6 +12,10 @@ import coltya from './coltya.png';
 import thedaily from './thedaily.png';
 import profile from './1.jpg';
 import profileTwo from './landscape.JPG';
+import youtubeLap from './youtube-lap.png';
+import youtube from './youtube.png';
+import lyiksLap from './lyriks-lap.png';
+import lyriks from './lyriks.png';
 
 export {
     blackLogo,
@@ -27,5 +31,9 @@ export {
     coltya,
     thedaily,
     profile,
-    profileTwo
+    profileTwo,
+    youtubeLap,
+    youtube,
+    lyiksLap,
+    lyriks
 }

@@ -1,4 +1,4 @@
-import { astripLap, projecthome,axialLap, newsLap, coltyaLap, axial, astrip, thedaily, coltya } from "../images"
+import { astripLap, projecthome,axialLap, newsLap, coltyaLap, axial, astrip, thedaily, coltya, youtubeLap, youtube, lyiksLap, lyriks } from "../images"
 export const projects = [
     {
         id: 1,
@@ -50,6 +50,32 @@ export const projects = [
         img: [
            coltyaLap,
             coltya
+        ]
+    },
+    {
+        id: 5,
+        no: "05",
+        name: 'Youtube Clone',
+        tech: 'React JS, Redux Toolkit, Material UI',
+        desc: 'I developed a YouTube clone using Rapid API, replicating the core functionalities of the platform.',
+        link: 'https://youtube-clone-by-beepul.netlify.app',
+        source: 'https://github.com/Beepul/Youtube-clone',
+        img: [
+           youtubeLap,
+            youtube
+        ]
+    },
+    {
+        id: 6,
+        no: "06",
+        name: 'Lyriks - Music Player',
+        tech: 'React JS, Redux Toolkit, Tailwind css',
+        desc: 'I developed a music player using Rapid API, drawing inspiration from Spotify and incorporating a design created by a popular YouTuber, delivering an immersive and user-friendly music listening experience with a diverse range of features.',
+        link: 'https://lyriks-music-player-bipul.netlify.app',
+        source: 'https://github.com/Beepul/Lyriks-Music-Player',
+        img: [
+           lyiksLap,
+            lyriks
         ]
     }
 ]
