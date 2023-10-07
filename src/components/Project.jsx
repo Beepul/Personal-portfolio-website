@@ -11,12 +11,13 @@ const Project = ({ project }) => {
 					</div>
 				</Col>
 				<Col lg={6}>
-					<div className="text__con p-md-5 p-3 pe-0 ps-md-5 ps-0">
+					<div className="text__con p-3 pt-5 pb-5 ">
 						<h4>{project.name}</h4>
 						<p className="desc">{project.desc}</p>
 						<p>
 							Tech: <span>{project.tech}</span>
 						</p>
+						{project.warn && <span className='project-warn'>{project.warn}</span> }
 						<div className="button__con d-flex flex-lg-column gap-lg-5 gap-md-3 gap-5 gap flex-md-row flex-column mt-5">
 							<a href={project.link} target="_blank">
 								View Live

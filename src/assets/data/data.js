@@ -1,4 +1,4 @@
-import { astripLap, projecthome,axialLap, newsLap, coltyaLap, axial, astrip, thedaily, coltya, youtubeLap, youtube, lyiksLap, lyriks } from "../images"
+import { astripLap, projecthome,axialLap, newsLap, coltyaLap, axial, astrip, thedaily, coltya, youtubeLap, youtube, lyiksLap, lyriks, blog, blogLap } from "../images"
 export const projects = [
     {
         id: 1,
@@ -16,6 +16,20 @@ export const projects = [
     {
         id: 2,
         no: "02",
+        name: 'Blog Website',
+        tech: 'React JS, Express JS, JWT, Multer-Storage, Mongo DB, Mongoose',
+        desc: 'Introducing "Blog Website": Your go-to blog website with JWT authentication, Multer image storage, and a user-friendly CRUD system for blog posts and categories. Experience seamless blogging with cutting-edge technology at your fingertips.',
+        link: 'https://blog-hsnp.onrender.com/',
+        source: 'https://github.com/Beepul/blog-frontend',
+        warn: 'This project is under construction !',
+        img: [
+            blogLap,
+            blog,
+        ]
+    },
+    {
+        id: 3,
+        no: "03",
         name: 'Astrip Travel & Tour',
         tech: 'React JS, SCSS, Bootstrap',
         desc: 'Astrip, the globally popular travel booking website. Discover seamless travel experiences and hassle-free trip planning. With a wide range of destinations, compare and book flights, hotels, and vacation packages. Explore exciting itineraries, read customer reviews, and access exclusive deals. Start your next adventure with Astrip today!',
@@ -27,8 +41,8 @@ export const projects = [
         ]
     },
     {
-        id: 3,
-        no: "03",
+        id: 4,
+        no: "04",
         name: 'The Daily News',
         tech: 'React JS, Redux Toolkit, SCSS, Bootstrap',
         desc: 'The Daily, your go-to news portal for the latest updates from around the world. Stay informed with breaking news, current affairs, and engaging articles covering a wide range of topics. Explore The Daily for a comprehensive news experience.',
@@ -40,8 +54,8 @@ export const projects = [
         ]
     },
     {
-        id: 4,
-        no: "04",
+        id: 5,
+        no: "05",
         name: 'Coltya - Ecommerce Website',
         tech: 'React JS, Redux Toolkit, SCSS, Bootstrap',
         desc: 'Experience the ultimate online shopping destination at Coltya. Browse through our extensive collection of items and products across all categories. Discover great deals, exclusive offers, and a seamless shopping experience. Shop with confidence at Coltya today.',
@@ -53,8 +67,8 @@ export const projects = [
         ]
     },
     {
-        id: 5,
-        no: "05",
+        id: 6,
+        no: "06",
         name: 'Youtube Clone',
         tech: 'React JS, Redux Toolkit, Material UI',
         desc: 'I developed a YouTube clone using Rapid API, replicating the core functionalities of the platform.',
@@ -66,8 +80,8 @@ export const projects = [
         ]
     },
     {
-        id: 6,
-        no: "06",
+        id: 7,
+        no: "07",
         name: 'Lyriks - Music Player',
         tech: 'React JS, Redux Toolkit, Tailwind css',
         desc: 'I developed a music player using Rapid API, drawing inspiration from Spotify and incorporating a design created by a popular YouTuber, delivering an immersive and user-friendly music listening experience with a diverse range of features.',

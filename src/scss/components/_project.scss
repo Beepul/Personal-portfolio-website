@@ -30,7 +30,7 @@
         background-color: transparent !important;
         h4{
             background-color: transparent !important;
-
+            margin-bottom: 12px;
         }
         .desc {
             color: $gray;
@@ -45,6 +45,10 @@
             background-color: transparent !important;
 
             }
+        }
+        .project-warn{
+            color: #d12222;
+            font-size: 12px;
         }
         .button__con {
             padding-left: 1.8rem;

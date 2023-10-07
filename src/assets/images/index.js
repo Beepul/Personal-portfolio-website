@@ -16,6 +16,8 @@ import youtubeLap from './youtube-lap.png';
 import youtube from './youtube.png';
 import lyiksLap from './lyriks-lap.png';
 import lyriks from './lyriks.png';
+import blog from './Blog.png';
+import blogLap from './blog-lap.png';
 
 export {
     blackLogo,
@@ -35,5 +37,7 @@ export {
     youtubeLap,
     youtube,
     lyiksLap,
-    lyriks
+    lyriks,
+    blog,
+    blogLap
 }
